@@ -1,6 +1,6 @@
 import json
 import redis
-from gnew_redis.exceptions import InvalidKey
+from wrapper_redis_client.exceptions import InvalidKey
 
 
 class RedisDB():
@@ -21,7 +21,7 @@ class RedisDB():
     def exists(self, key: str) -> bool:
         return self._redis.exists(key) == 1
     
-    def save(self, key: str, valor, ttl=None) -> bool:
+    def save(self, key: str, valor, ttl: int=None) -> bool:
         self.validate_key(key)
         return self._redis.set(key, json.dumps(valor), ttl)
     
