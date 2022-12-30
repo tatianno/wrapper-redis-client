@@ -5,7 +5,7 @@
 It is a wrapper for a Redis Server.
 
 
-## Installing AMI2RabbitMQ and Supported Versions
+## Installing RedisDB and Supported Versions
 
 RedisDB is available on PyPI:
 
