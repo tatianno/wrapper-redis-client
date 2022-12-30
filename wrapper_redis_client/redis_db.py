@@ -5,7 +5,7 @@ from wrapper_redis_client.exceptions import InvalidKey
 
 class RedisDB():
     _redis = redis.Redis()
-    version = '0.0.3'
+    version = '0.0.4'
 
     def __init__(self, key_prefix):
         self._key_prefix = key_prefix
